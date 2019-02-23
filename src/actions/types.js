@@ -1,0 +1,8 @@
+export const GET_SKILLS_DATA = 'GET_SKILLS_DATA';
+export const SET_SKILLS_DATA = 'SET_SKILLS_DATA';
+
+export const GET_WORK_DATA = 'GET_WORK_DATA';
+export const SET_WORK_DATA = 'SET_WORK_DATA';
+
+export const GET_EDUCATION_DATA = 'GET_EDUCATION_DATA';
+export const SET_EDUCATION_DATA = 'SET_EDUCATION_DATA';

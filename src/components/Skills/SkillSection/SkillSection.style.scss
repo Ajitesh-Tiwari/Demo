@@ -1,0 +1,78 @@
+.skill-section {
+  text-align: center;
+  border-bottom: 1px solid #d2d2d2;
+
+  .rating-color {
+
+    padding: 0;
+    width: 100%;
+    margin: 0 0 10px;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      border: none;
+
+
+      .active {
+        border: 1px solid #fff;
+        border-radius: 8px !important;
+        height: 13px;
+        width: 40px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
+        margin: 0 -4px;
+        position: relative;
+        z-index: 9;
+      }
+
+      span {
+        padding: 0;
+        display: inline-block;
+        width: 38px;
+        height: 8px;
+        border-radius: 0;
+        border-right: 1px solid #fff;
+        position: relative;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+
+    }
+
+    li:first-child span {
+      border-radius: 8px 0 0 8px;
+    }
+
+    li:last-child span {
+      border-radius: 0 8px 8px 0;
+      border-right: none;
+    }
+  }
+
+  &__endorsement-section {
+    padding-bottom: 0.5rem;
+    background: 0 0;
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 8px;
+    font-family: Roboto, sans-serif;
+  }
+
+  &__skill-name {
+    padding: 0.5rem 1rem;
+    background: 0 0;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 8px;
+    font-family: Roboto, sans-serif;
+  }
+}

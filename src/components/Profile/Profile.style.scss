@@ -1,0 +1,42 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.profile {
+  margin: 1rem 0;
+  text-align: center;
+
+  &__image {
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    margin: 1rem;
+  }
+
+  &__body {
+    &__footer {
+      padding: 0.5rem;
+
+      a{
+        color: gray;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+
+    &__image {
+      margin: 0rem;
+    }
+
+    &__body {
+      &__footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+  }
+}
