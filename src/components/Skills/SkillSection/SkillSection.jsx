@@ -21,8 +21,6 @@ const SkillSection = ({ skill }) => {
     endorsedString = endorsedString + " and " + diff + " other" + (diff > 1 ? "s" : "");
   }
 
-  console.log(endorsedString);
-
   return (
     <div className='skill-section'>
       <h2 className='skill-section__skill-name'>{skill.skill_name}</h2>
