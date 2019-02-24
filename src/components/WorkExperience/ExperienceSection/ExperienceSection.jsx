@@ -1,12 +1,12 @@
-import React from "react";
-import "./ExperienceSection.style.scss";
+import React from 'react';
+import './ExperienceSection.style.scss';
 
 const ExperienceSection = ({ workExperience }) => {
   return (
     <div className='work-experience'>
       <div className='work-experience__details'>
         <div className='work-experience__details__left'>
-          <img src={workExperience.company.logo_url}/>
+          <img src={workExperience.company.logo_url} alt=''/>
 
           <div className='work-experience__main'>
             <h3 className='mb-0'>{workExperience.company.name}</h3>

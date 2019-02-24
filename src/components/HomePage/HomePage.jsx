@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Profile from "../Profile";
-import Skills from "../Skills";
-import WorkExperience from "../WorkExperience";
-import Education from "../Education";
+import Profile from '../Profile';
+import Skills from '../Skills';
+import WorkExperience from '../WorkExperience';
+import Education from '../Education';
 
 class HomePage extends Component {
   componentDidMount() {

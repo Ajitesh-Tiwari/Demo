@@ -1,6 +1,6 @@
-import React from "react";
-import SkillSection from "./SkillSection";
-import "./Skills.style.scss";
+import React from 'react';
+import SkillSection from './SkillSection';
+import './Skills.style.scss';
 
 const Skills = ({ skills }) => {
   return (
@@ -11,8 +11,8 @@ const Skills = ({ skills }) => {
           <div className='skills__top'>
             <h2>Introducing Endorsements</h2>
             <a
-              href="https://springrole.freshdesk.com/support/solutions/articles/43000433785-what-do-the-endorsement-colors-mean-"
-              target="_blank">Learn more</a>
+              href='https://springrole.freshdesk.com/support/solutions/articles/43000433785-what-do-the-endorsement-colors-mean-'
+              target='_blank'>Learn more</a>
           </div>
           <div className='skills__card'>
             {skills && skills.map((skill, index) => {

@@ -1,6 +1,6 @@
-import React from "react";
-import "./Education.style.scss";
-import EducationSection from "./EducationSection";
+import React from 'react';
+import './Education.style.scss';
+import EducationSection from './EducationSection';
 
 const Education = ({ education }) => {
   const educationList = education.educationList;
@@ -10,7 +10,7 @@ const Education = ({ education }) => {
         <h4>Education</h4>
         <div className='card'>
           {educationList.map((educationItem, index) => {
-            return <EducationSection education={educationItem} key={index}/>
+            return <EducationSection education={educationItem} key={index}/>;
           })}
         </div>
       </div>

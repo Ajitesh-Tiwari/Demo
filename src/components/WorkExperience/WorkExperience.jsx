@@ -1,6 +1,6 @@
-import React from "react";
-import ExperienceSection from "./ExperienceSection";
-import "./WorkExperience.style.scss";
+import React from 'react';
+import ExperienceSection from './ExperienceSection';
+import './WorkExperience.style.scss';
 
 const WorkExperience = ({ work }) => {
   const workExperiences = work.work_experiences;
