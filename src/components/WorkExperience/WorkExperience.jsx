@@ -8,7 +8,7 @@ const WorkExperience = ({ work }) => {
     <div>
       {workExperiences &&
       <div className='work'>
-        <h4>WorkExperience</h4>
+        <h4>Work Experience</h4>
         <div className='card'>
           <div className='work__card'>
             {workExperiences && workExperiences.map((workExperience, index) => {

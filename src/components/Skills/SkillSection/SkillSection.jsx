@@ -1,7 +1,7 @@
 import React from "react";
 import "./SkillSection.style.scss";
 
-const colors = ["#f6efed", "#ffe1be", "#f7be6c", "#ff8100", "#d86d00"]
+const colors = ["#f6efed", "#ffe1be", "#f7be6c", "#ff8100", "#d86d00"];
 
 const SkillSection = ({ skill }) => {
 

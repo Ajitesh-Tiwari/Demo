@@ -44,6 +44,60 @@
     }
   }
 
+  &__skills {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      line-height: 27px;
+      background: #f1f1f1;
+      border-radius: 21px;
+      display: flex;
+      align-items: center;
+      margin-right: 0.5rem;
+
+      span {
+        padding: 0 15px;
+        color: #4a4a4a;
+        background: 0 0;
+        border-radius: 0;
+        position: relative;
+        top: -1px;
+        font-size: 12px;
+        font-weight: 500;
+        display: inline-block;
+      }
+    }
+
+    &__color {
+      display: inline-block;
+      vertical-align: bottom;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        width: 31px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        height: 31px;
+        display: inline-block;
+        cursor: pointer;
+        list-style: none;
+
+
+        span {
+          padding: 0 15px;
+          color: #4a4a4a;
+          background: 0 0;
+          border-radius: 0;
+          position: relative;
+          top: -1px;
+        }
+      }
+    }
+  }
+
   @include media-breakpoint-up(md) {
     text-align: left;
 

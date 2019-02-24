@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Profile from "../Profile";
 import Skills from "../Skills";
 import WorkExperience from "../WorkExperience";
+import Education from "../Education";
 
 class HomePage extends Component {
   componentDidMount() {
@@ -20,6 +21,7 @@ class HomePage extends Component {
           </div>
           <div className='col-md-8 mb50'>
             <WorkExperience/>
+            <Education/>
           </div>
         </div>
       </div>

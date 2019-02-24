@@ -35,7 +35,7 @@ const ExperienceSection = ({ workExperience }) => {
           <h2 className='mb-0'>WORKED ON</h2>
           <div className='work-experience__worked-on__main'>
             {workExperience.skills_data.map((skill, index) => {
-              return <div className='work-experience__worked-on__skill'>
+              return <div key={index} className='work-experience__worked-on__skill'>
                 <span>{skill.skill_name}</span>
               </div>;
             })}

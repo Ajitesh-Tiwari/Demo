@@ -1,7 +1,10 @@
 import React from "react";
 import "./Profile.style.scss";
 
+const colors = ["#f6efed", "#ffe1be", "#f7be6c", "#ff8100", "#d86d00"];
+
 const Profile = ({ profile }) => {
+
   return (
     <div>
       {profile.name && <div className='profile'>
@@ -17,6 +20,24 @@ const Profile = ({ profile }) => {
                 <p className="card-text">
                   <small className="text-muted">{profile.current_location}</small>
                 </p>
+
+                {profile.skills && <div className='profile__skills'>
+                  {profile.skills.map((skill, index) => {
+
+                    const activePosition = Math.trunc((skill.score * 100) / 20);
+                    return <div className='profile__skills__item' key={index}>
+                      <span>{skill.skill_name}</span>
+                      <ul className="profile__skills__color">
+
+                        <li style={{ background: colors[activePosition] }} className="rate-low trigger-popup-selector">
+                          <span></span>
+                        </li>
+
+                      </ul>
+                    </div>;
+                  })}
+                </div>
+                }
               </div>
               <div className='bg-light profile__body__footer'>
                 <a href={profile.url}>{profile.url}</a>
